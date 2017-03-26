@@ -1,0 +1,28 @@
+{
+  "name": "codetalk-oracle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "./fixtures/drop_tables.js && rm -r data/* || exit 0",
+    "init": "./fixtures/create_tables.js",
+    "fixtures": "./fixtures/create_export_products.js 100 && ./fixtures/create_import_orders.js 3 200"
+  },
+  "keywords": [],
+  "author": "soyuka@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@most/create": "^2.0.1",
+    "combined-stream": "^1.0.5",
+    "csv-parser": "^1.11.0",
+    "csv-write-stream": "^2.0.0",
+    "date-fns": "^1.28.1",
+    "faker": "^4.1.0",
+    "glob": "^7.1.1",
+    "minimist": "^1.2.0",
+    "most": "^1.2.2",
+    "oracledb": "^1.13.0",
+    "pump": "^1.0.2",
+    "stringify-stream": "^1.0.5"
+  }
+}
