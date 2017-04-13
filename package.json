@@ -13,6 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "@most/create": "^2.0.1",
+    "bluebird": "^3.5.0",
     "combined-stream": "^1.0.5",
     "csv-parser": "^1.11.0",
     "csv-write-stream": "^2.0.0",
@@ -22,6 +23,7 @@
     "minimist": "^1.2.0",
     "most": "^1.2.2",
     "oracledb": "^1.13.0",
+    "pm2": "^2.4.2",
     "pump": "^1.0.2",
     "stringify-stream": "^1.0.5"
   }

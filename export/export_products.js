@@ -12,7 +12,7 @@ try {
   fs.mkdirSync(DATA_PATH)
 } catch(e) {}
 
-console.time('foo')
+console.time('export')
 
 oracle()
 .then(function(connection) {
@@ -50,7 +50,7 @@ oracle()
     return connection.commit()
   })
   .then(() => {
-  console.timeEnd('foo')
+  console.timeEnd('export')
     return connection.close()
   })
   .catch((err) => {
